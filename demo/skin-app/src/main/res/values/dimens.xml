@@ -8,4 +8,8 @@
     <dimen name="spacing_normal">16dp</dimen>
     <dimen name="image_width">120dp</dimen>
     <dimen name="title_margin">20dp</dimen>
+
+    <dimen name="block_width">40dp</dimen>
+    <dimen name="block_low_height">8dp</dimen>
+    <dimen name="block_high_height">196dp</dimen>
 </resources>

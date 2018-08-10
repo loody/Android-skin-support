@@ -43,7 +43,7 @@
     </style>
 
     <style name="TextStyle">
-        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColor">@color/text_color_test</item>
         <item name="android:background">@color/text_background</item>
     </style>
 

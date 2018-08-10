@@ -267,6 +267,7 @@ public class SkinCompatManager extends SkinObservable {
         return mSkinAllActivityEnable;
     }
 
+
     /**
      * 设置状态栏换肤，使用Theme中的{@link android.R.attr#statusBarColor}属性. 5.0以上有效.
      *

@@ -3,7 +3,12 @@ package skin.support.widget;
 import android.content.Context;
 import android.support.annotation.DrawableRes;
 import android.support.v7.widget.AppCompatTextView;
+import android.text.Spanned;
+import android.text.TextUtils;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.URLSpan;
 import android.util.AttributeSet;
+import android.util.Log;
 
 /**
  * Created by ximsfei on 2017/1/10.
@@ -52,7 +57,8 @@ public class SkinCompatTextView extends AppCompatTextView implements SkinCompatS
 
     @Override
     public void setCompoundDrawablesRelativeWithIntrinsicBounds(
-            @DrawableRes int start, @DrawableRes int top, @DrawableRes int end, @DrawableRes int bottom) {
+            @DrawableRes int start, @DrawableRes int top, @DrawableRes int end,
+            @DrawableRes int bottom) {
         super.setCompoundDrawablesRelativeWithIntrinsicBounds(start, top, end, bottom);
         if (mTextHelper != null) {
             mTextHelper.onSetCompoundDrawablesRelativeWithIntrinsicBounds(start, top, end, bottom);
@@ -61,7 +67,8 @@ public class SkinCompatTextView extends AppCompatTextView implements SkinCompatS
 
     @Override
     public void setCompoundDrawablesWithIntrinsicBounds(
-            @DrawableRes int left, @DrawableRes int top, @DrawableRes int right, @DrawableRes int bottom) {
+            @DrawableRes int left, @DrawableRes int top, @DrawableRes int right,
+            @DrawableRes int bottom) {
         super.setCompoundDrawablesWithIntrinsicBounds(left, top, right, bottom);
         if (mTextHelper != null) {
             mTextHelper.onSetCompoundDrawablesWithIntrinsicBounds(left, top, right, bottom);
@@ -76,6 +83,25 @@ public class SkinCompatTextView extends AppCompatTextView implements SkinCompatS
         if (mTextHelper != null) {
             mTextHelper.applySkin();
         }
+
+        Log.d("loody", "getText()" + getText().toString());
+
+        CharSequence mText = getText();
+        if (!TextUtils.isEmpty(mText)) {
+            if (getText() instanceof Spanned) {
+                ForegroundColorSpan[] foregroundColorSpans = ((Spanned) mText).getSpans(0,
+                        mText.length(), ForegroundColorSpan.class);
+                if (foregroundColorSpans.length > 0) {
+                    for (ForegroundColorSpan f : foregroundColorSpans) {
+                        Log.d("loody",
+                                "foregroundColorSpans:"
+                                        + f.getForegroundColor());
+                    }
+                }
+            }
+
+        }
     }
+
 
 }

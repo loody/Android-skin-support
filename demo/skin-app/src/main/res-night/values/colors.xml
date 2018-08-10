@@ -8,13 +8,15 @@
     <color name="title_text_color_night">#ddffffff</color>
     <color name="subtitle_text_color_night">#aaffffff</color>
     <color name="text_color_tip_night">#ffffff</color>
-    <color name="text_color_night">#ffffff</color>
+    <color name="text_color_night">#ce0f00</color>
     <color name="text_color_hint_night">#ffb2b2b2</color>
     <color name="text_background_night">#ff2e2e2e</color>
     <color name="background_night">#ff202020</color>
     <color name="divider_night">#44ffffff</color>
     <color name="ripple_color_night">#44ffffff</color>
     <color name="statusBarColor_night">#ce3d3a</color>
+    <color name="text_color_test_night">#F3F90E</color>
+    <color name="text_color_test_1_night">#228213</color>
 
     <!-- flyco tab layout -->
     <color name="textColorPrimary_night">#ff333333</color>
@@ -76,4 +78,5 @@
 
     <color name="msg_background_color_night">#dcd3a3</color>
     <color name="msg_stroke_color_night">#ce2736</color>
+
 </resources>

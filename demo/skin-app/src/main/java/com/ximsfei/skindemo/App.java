@@ -3,6 +3,7 @@ package com.ximsfei.skindemo;
 import android.app.Application;
 import android.support.v7.app.AppCompatDelegate;
 
+import com.blankj.utilcode.util.Utils;
 import com.ximsfei.skindemo.loader.CustomSDCardLoader;
 import com.ximsfei.skindemo.loader.ZipSDCardLoader;
 
@@ -23,6 +24,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Utils.init(this);
 //        SkinCircleImageViewManager.init(this);
 //        SkinMaterialManager.init(this);
 //        SkinConstraintManager.init(this);

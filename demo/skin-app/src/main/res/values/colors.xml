@@ -16,6 +16,8 @@
     <color name="ripple_color">#44000000</color>
     <color name="statusBarColor">#44000000</color>
     <drawable name="windowBackground">#f2f4f5</drawable>
+    <color name="text_color_test">#009688</color>
+    <color name="text_color_test_1">#EC7263</color>
 
     <!-- flyco tab layout -->
     <color name="textColorPrimary">#ff333333</color>

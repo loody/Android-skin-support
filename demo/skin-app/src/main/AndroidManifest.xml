@@ -82,6 +82,10 @@
             android:screenOrientation="portrait" />
 
         <service android:name="com.ximsfei.skindemo.window.WindowService" />
+
+        <activity
+            android:name="com.ximsfei.skindemo.span.SpanActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

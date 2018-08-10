@@ -24,6 +24,7 @@ import com.ximsfei.skindemo.constraint.ConstraintLayoutActivity;
 import com.ximsfei.skindemo.flycotablayout.ui.SimpleHomeActivity;
 import com.ximsfei.skindemo.mdtab.MaterialDesignActivity;
 import com.ximsfei.skindemo.picker.DrawablePickerActivity;
+import com.ximsfei.skindemo.span.SpanActivity;
 import com.ximsfei.skindemo.tab.MainActivity;
 import com.ximsfei.skindemo.test.TestActivity;
 import com.ximsfei.skindemo.window.WindowManagerActivity;
@@ -47,6 +48,7 @@ public class SplashActivity extends BaseActivity {
             "Actionbar",
             "Color Picker",
             "Drawable Picker",
+            "Span",
             "Zip包资源加载"
     };
     private final Class<?>[] mClasses = {
@@ -60,6 +62,7 @@ public class SplashActivity extends BaseActivity {
             ActionbarTestActivity.class,
             ColorPickerActivity.class,
             DrawablePickerActivity.class,
+            SpanActivity.class,
             ZipActivity.class
     };
 
